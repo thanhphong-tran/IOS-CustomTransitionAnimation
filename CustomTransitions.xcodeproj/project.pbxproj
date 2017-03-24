@@ -15,6 +15,10 @@
 		5FF2AD711AA45CF60092F66C /* CustomTransitionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2AD701AA45CF60092F66C /* CustomTransitionsTests.swift */; };
 		5FF2AD7B1AA45F680092F66C /* bike_traveler.png in Resources */ = {isa = PBXBuildFile; fileRef = 5FF2AD7A1AA45F680092F66C /* bike_traveler.png */; };
 		5FF2AD7D1AA467630092F66C /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FF2AD7C1AA467630092F66C /* ActionViewController.swift */; };
+		8A8917581E8222AF009BCF30 /* CustomPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8917571E8222AF009BCF30 /* CustomPresentAnimationController.swift */; };
+		8A89175A1E822AA6009BCF30 /* CustomDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8917591E822AA6009BCF30 /* CustomDismissAnimationController.swift */; };
+		8A89175C1E825E4A009BCF30 /* CustomNavigationAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A89175B1E825E4A009BCF30 /* CustomNavigationAnimationController.swift */; };
+		8A89175E1E826A3B009BCF30 /* CustomInterationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A89175D1E826A3B009BCF30 /* CustomInterationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		5FF2AD701AA45CF60092F66C /* CustomTransitionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionsTests.swift; sourceTree = "<group>"; };
 		5FF2AD7A1AA45F680092F66C /* bike_traveler.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike_traveler.png; sourceTree = "<group>"; };
 		5FF2AD7C1AA467630092F66C /* ActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		8A8917571E8222AF009BCF30 /* CustomPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPresentAnimationController.swift; sourceTree = "<group>"; };
+		8A8917591E822AA6009BCF30 /* CustomDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomDismissAnimationController.swift; sourceTree = "<group>"; };
+		8A89175B1E825E4A009BCF30 /* CustomNavigationAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationAnimationController.swift; sourceTree = "<group>"; };
+		8A89175D1E826A3B009BCF30 /* CustomInterationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInterationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,10 @@
 				5FF2AD581AA45CF60092F66C /* Supporting Files */,
 				5FF2AD7C1AA467630092F66C /* ActionViewController.swift */,
 				5FACF6631AA5AEBF009C6C88 /* ItemsTableViewController.swift */,
+				8A8917571E8222AF009BCF30 /* CustomPresentAnimationController.swift */,
+				8A8917591E822AA6009BCF30 /* CustomDismissAnimationController.swift */,
+				8A89175B1E825E4A009BCF30 /* CustomNavigationAnimationController.swift */,
+				8A89175D1E826A3B009BCF30 /* CustomInterationController.swift */,
 			);
 			path = CustomTransitions;
 			sourceTree = "<group>";
@@ -167,9 +179,11 @@
 				TargetAttributes = {
 					5FF2AD541AA45CF60092F66C = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 					};
 					5FF2AD691AA45CF60092F66C = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 5FF2AD541AA45CF60092F66C;
 					};
 				};
@@ -220,8 +234,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				5FF2AD7D1AA467630092F66C /* ActionViewController.swift in Sources */,
+				8A89175A1E822AA6009BCF30 /* CustomDismissAnimationController.swift in Sources */,
+				8A8917581E8222AF009BCF30 /* CustomPresentAnimationController.swift in Sources */,
 				5FF2AD5B1AA45CF60092F66C /* AppDelegate.swift in Sources */,
 				5FACF6641AA5AEBF009C6C88 /* ItemsTableViewController.swift in Sources */,
+				8A89175C1E825E4A009BCF30 /* CustomNavigationAnimationController.swift in Sources */,
+				8A89175E1E826A3B009BCF30 /* CustomInterationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,6 +367,7 @@
 				INFOPLIST_FILE = CustomTransitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -359,6 +378,7 @@
 				INFOPLIST_FILE = CustomTransitions/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -377,6 +397,7 @@
 				INFOPLIST_FILE = CustomTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTransitions.app/CustomTransitions";
 			};
 			name = Debug;
@@ -392,6 +413,7 @@
 				INFOPLIST_FILE = CustomTransitionsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomTransitions.app/CustomTransitions";
 			};
 			name = Release;
